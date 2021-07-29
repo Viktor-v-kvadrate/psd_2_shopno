@@ -1,0 +1,787 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ______________________For All______________________ */
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 38px;
+    color: #181919;
+    text-transform: uppercase;
+}
+h3{
+    font-family: 'Merriweather', serif;
+    font-weight: normal;
+    font-size: 17px;
+    color: #5f5f5f;
+    text-transform: uppercase;
+}
+
+.slider{
+    margin-left: 200px;
+    padding-top: 79px;
+    display: flex;
+    flex-direction: row;
+}
+.imgSlider{
+    width: 10px;
+    height: 10px;
+    background-color: #d0d0d0;
+    border-radius: 3px;
+    margin: 0 4px;
+}
+.imgSlider:hover{
+    background-color: #71f6eb;
+}
+
+
+/* ----------------------------H-O-V-E-R-S-1----------------------------------- */
+.divHover{
+    box-sizing: border-box;
+    background-color: #75f6ec;
+    width: 335px;
+    height: 241px;
+    text-align: left;
+    padding-left: 40px;
+    padding-top: 20px;
+    position: absolute;
+    top: 184px;
+    left: 17px;
+    opacity: 0;
+}
+.angle{
+    top: -19px;
+    left: 17px;
+    position: absolute;
+}
+.textHover1{
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #2b3231;
+}
+.textHover1 span{
+    font-family: 'Merriweather', serif;
+    font-weight: normal;
+    font-size: 15px;
+    color: #757e7d;
+}
+.textHover2{
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: #16312f;
+    line-height: 25px;
+    margin-bottom: 35px;
+}
+.flexTeam1 > div:hover .divHover, .flexTeam2 > div:hover .divHover{
+    transition: 1s;
+    opacity: 1;
+}
+
+
+/* ----------------------------H-O-V-E-R-S-2----------------------------------- */
+.bigDiv1:hover #moreText, .smallDiv1:hover #moreText,
+.bigDiv2:hover #moreText, .smallDiv2:hover #moreText,
+.bigDiv3:hover #moreText, .smallDiv3:hover #moreText{
+    visibility: visible;
+    transition: 1s;
+    color: black;
+    top: 118px;
+}
+.bigDiv1:hover .noneP, .smallDiv1:hover .noneP,
+.bigDiv2:hover .noneP, .smallDiv2:hover .noneP,
+.bigDiv3:hover .noneP, .smallDiv3:hover .noneP{
+    display: none;
+}
+.bigDiv1:hover .bigColor1, .smallDiv1:hover .smallColor1,
+.bigDiv2:hover .bigColor2, .smallDiv2:hover .smallColor2,
+.bigDiv3:hover .bigColor3, .smallDiv3:hover .smallColor3{
+    background-color: #70f4e9;
+    opacity: 1;
+    transition: 1s;
+}
+.bigDiv1:hover h4, .bigDiv2:hover h4, .bigDiv3:hover h4{
+    transition: 1s;
+    color: black;
+    top: 64px;
+}
+.smallDiv1:hover h4, .smallDiv2:hover h4, .smallDiv3:hover h4{
+    transition: 1s;
+    color: black;
+    top: 64px;
+    transform: rotate(360deg);
+}
+.bigDiv2:hover .cross, .smallDiv2:hover .cross,
+.bigDiv3:hover .cross, .smallDiv3:hover .cross{
+    transition: 1s;
+    position: absolute;
+    top: 303px;
+}
+.bigDiv1:hover .cross, .smallDiv1:hover .cross{
+    transition: 1s;
+    position: absolute;
+    top: 330px;
+}
+.smallDiv1:hover .cross, .smallDiv2:hover .cross, .smallDiv3:hover .cross{
+    transform: rotate(360deg);
+}
+
+/* _______________1 section________________ */
+.headerBox{
+    background-color: #eff0f2;
+}
+.divCenter{
+    max-width: 1140px;
+    margin: auto;
+    padding-top: 64px;
+    text-align: center;
+    position: relative;
+}
+.logo{
+    float: left;
+}
+.burger{
+    float: right;
+    margin-top: 16px;
+}
+.burger:hover{
+    transform: rotate(10deg);
+}
+h1{
+    clear: both;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 45px;
+    color: #505050;
+    text-shadow: #c9c9cb 5px 7px 6px;
+    margin-top: 195px;
+    margin-bottom: 139px;
+    word-spacing: 12px;
+}
+h1 span{
+    background-color: #b2f2ee;
+    padding: 0 12px;
+}
+.buttonHeader{
+    padding: 18px 47px;/*  */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    color: #3c3c3d;
+    border: 2px solid #777879;
+    margin-bottom: 195px;
+}
+.buttonHeader:hover{
+    background-color: #7f8081;
+}
+.square, .glass{
+    position: absolute;
+}
+.glass{
+    right: 52px;
+    bottom: 75px;
+    z-index: 3;
+}
+.square{
+    right: 99px;
+    bottom: 138px;
+}
+
+
+/* _______________2 section________________ */
+.about{
+    background-color: #f8fafa;
+}
+.divAbout{
+    max-width: 1140px;
+    margin: auto;
+    padding: 128px 35px 113px 35px;
+    text-align: center;
+    overflow: hidden;
+}
+.aboutImg{
+    float: left;
+    max-width: 50%;
+    margin-top: 150px;
+    position: relative;
+    padding-top: 32px;
+}
+.aboutText{
+    float: right;
+    max-width: 50%;
+    text-align: left;
+    margin-top: 150px;
+}
+.text1{
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #3e3f3f;
+    text-transform: uppercase;
+}
+.text2{
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: #404141;
+    line-height: 26px;
+    padding: 32px 0 44px 0;
+}
+.text3{
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: #404141;
+    line-height: 26px;
+}
+.text4{
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+    font-size: 17px;
+    color: #3e3f3f;
+    text-transform: uppercase;
+    padding: 44px 0 28px 0;
+}
+.text5{
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: #404141;
+    line-height: 26px;
+}
+.Chair{
+    position: absolute;
+    left: 19px;
+    top: -30px;
+}
+
+
+/* _________________________3 section__________________________ */
+.works{
+    background-color: #ffffff;
+}
+.divWorks{
+    max-width: 1140px;
+    margin: auto;
+    text-align: center;
+    padding-top: 130px;
+}
+.flexWorks1, .flexWorks2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.flexWorks1{
+    margin-top: 123px;
+}
+.flexWorks2{
+    margin-top: 12px;
+    margin-bottom: 125px;
+}
+.imgWork:hover{
+    opacity: 0.7;
+    border-radius: 15px;
+}
+
+
+/* _____________________________4 section_____________________________ */
+.services{
+    background-color: #f9fbfb;
+}
+.divServices{
+    max-width: 1140px;
+    margin: auto;
+    text-align: center;
+    padding: 125px 0;
+}
+.flexServices1{
+    margin-top: 123px;
+    display: flex;
+    justify-content: space-between;
+}
+.flexServices2{
+    margin-top: 13px;
+    display: flex;
+    justify-content: space-between;
+}
+.flexServices3{
+    margin-top: 13px;
+    display: flex;
+    justify-content: space-between;
+}
+.bigDiv1{
+    width: 652px;
+    height: 444px;
+    background-image: url(../img/services1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    text-align: left;
+}
+.bigDiv2{
+    width: 652px;
+    height: 370px;
+    background-image: url(../img/services3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    text-align: left;
+}
+.bigDiv3{
+    width: 652px;
+    height: 370px;
+    background-image: url(../img/services6.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    text-align: left;
+}
+.bigColor1{
+    width: 652px;
+    height: 444px;
+    background-color: #000000;
+    opacity: 0.6;
+    position: relative;
+    z-index: 10;
+}
+.bigColor2, .bigColor3{
+    width: 652px;
+    height: 370px;
+    background-color: #000000;
+    opacity: 0.6;
+    position: absolute;
+    z-index: 10;
+}
+.smallDiv1{
+    width: 474px;
+    height: 444px;
+    background-image: url(../img/services2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    text-align: left;
+}
+.smallDiv2{
+    width: 474px;
+    height: 370px;
+    background-image: url(../img/services4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    text-align: left;
+}
+.smallDiv3{
+    width: 474px;
+    height: 370px;
+    background-image: url(../img/services5.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    text-align: left;
+}
+.smallColor1{
+    width: 474px;
+    height: 444px;
+    background-color: #000000;
+    opacity: 0.6;
+    position: absolute;
+    z-index: 10;
+}
+.smallColor2, .smallColor3{
+    width: 474px;
+    height: 370px;
+    background-color: #000000;
+    opacity: 0.6;
+    position: absolute;
+    z-index: 10;
+}
+#moreText{
+    visibility: hidden;
+}
+h4{
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #f7f7f7;
+    text-transform: uppercase;
+    word-spacing: 8px;
+    letter-spacing: 1px;
+    position: absolute;
+    z-index: 15;
+    top: 186px;
+    left: 67px;
+}
+.flexServices2 h4, .flexServices3 h4{
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #f7f7f7;
+    text-transform: uppercase;
+    word-spacing: 8px;
+    letter-spacing: 1px;
+    position: absolute;
+    z-index: 15;
+    top: 165px;
+    left: 67px;
+}
+.bigDiv1 p, .smallDiv1 p{
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: #f0f0f0;
+    word-spacing: 5px;
+    position: absolute;
+    z-index: 15;
+    top: 230px;
+    left: 67px;
+}
+.bigDiv2 p, .smallDiv2 p, .bigDiv3 p, .smallDiv3 p{
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: #f0f0f0;
+    word-spacing: 5px;
+    position: absolute;
+    z-index: 15;
+    top: 209px;
+    left: 67px;
+}
+.bigDiv1 a, .smallDiv1 a, .cross{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 19px;
+    color: #f7f7f7;
+    text-decoration: none;
+    position: absolute;
+    z-index: 15;
+    top: 351px;
+    left: 67px;
+}
+.bigDiv2 a, .smallDiv2 a, .bigDiv3 a, .smallDiv3 a{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 19px;
+    color: #f7f7f7;
+    text-decoration: none;
+    position: absolute;
+    z-index: 15;
+    top: 303px;
+    left: 67px;
+}
+.bigDiv1 span, .smallDiv1 span, .bigDiv2 span, .smallDiv2 span, .bigDiv3 span, .smallDiv3 span{
+    opacity: 0;
+}
+
+
+/* _____________________________5 section__________________________________ */
+.team{
+    background-color: #ffffff;
+}
+.divTeam{
+    max-width: 1140px;
+    margin: auto;
+    text-align: center;
+    padding: 123px 0 118px;
+}
+.flexTeam1{
+    margin-top: 125px;
+}
+.flexTeam2{
+    margin-top: 13px;
+}
+.flexTeam1, .flexTeam2{
+    display: flex;
+    justify-content: space-between;
+}
+.flexTeam1 > div, .flexTeam2 > div{
+    width: 371px;
+    height: 440px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.human1{
+    background-image: url(../img/team1&6.png);
+    position: relative;
+}
+.human2{
+    background-image: url(../img/team2.png);
+    position: relative;
+}
+.human3{
+    background-image: url(../img/team3.png);
+    position: relative;
+}
+.human4{
+    background-image: url(../img/team4.png);
+    position: relative;
+}
+.human5{
+    background-image: url(../img/team5.png);
+    position: relative;
+}
+.human6{
+    background-image: url(../img/team1&6.png);
+    position: relative;
+}
+
+
+/* ___________________________6 sections___________________________ */
+.says{
+    background-color: #f9fbfb;
+}
+.divSays{
+    max-width: 1140px;
+    margin: auto;
+    text-align: center;
+    padding: 122px 0 139px;
+}
+.flexSays{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 162px;
+}
+.imgSays{
+    width: 393px;
+    height: 362px;
+    background-color: #eaebed;
+    position: relative;
+}
+.textSays{
+    width: 668px;
+    height: 362px;
+    background-color: #eaebed;
+    position: relative;
+}
+.imgSays img{
+    position: absolute;
+    left: 18px;
+    top: -40px;
+}
+.sliderS{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 433px;
+    left: 176px;
+}
+.imgSliderS{
+    width: 10px;
+    height: 10px;
+    background-color: #d0d0d0;
+    border-radius: 3px;
+    margin: 0 4px;
+}
+.imgSliderS:hover{
+    background-color: #71f6eb;
+}
+.select{
+    width: 135px;
+    height: 53px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    right: 0;
+    bottom: -83px;
+}
+.select > div{
+    box-sizing: border-box;
+    width: 53px;
+    height: 53px;
+    background-color: #ffffff;
+    text-align: center;
+    padding-top: 20px;
+    border-radius: 2px;
+    box-shadow: #eff1f1 5px 4px 6px;
+}
+.arrowRight img{
+    transform: rotate(180deg);
+}
+.select > div:hover{
+    background-color: #71f6eb;
+}
+.textP1{
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #0c0c0c;
+    padding-top: 100px;
+    padding-bottom: 32px;
+}
+.textP1 span{
+    font-family: 'Merriweather', serif;
+    font-weight: normal;
+    font-size: 15px;
+    color: #7e7e7e;
+}
+.textP2{
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: #5a5a5b;
+    padding-bottom: 38px;
+}
+
+
+/* _______________________________7 section____________________________ */
+.parteners{
+    background-color: #ffffff;
+}
+.divPartners{
+    max-width: 1140px;
+    margin: auto;
+    text-align: center;
+    padding-top: 108px;
+    padding-bottom: 107px;
+}
+
+
+/* ______________________________8 sections_____________________________ */
+.inform{
+    background-image: url(../img/christmas_snow_trees-wide.png);
+    background-repeat: no-repeat;
+    background-position-y: 96%;
+    background-position-x: 50%;
+    height: 704px;
+    opacity: 67%;
+}
+.flexInform{
+    max-width: 1140px;
+    margin: auto;
+    padding-top: 121px;
+    padding-bottom: 123px;
+    display: flex;
+    justify-content: space-between;
+}
+.infoLeft{
+    width: 615px;
+    height: 461px;
+    background-color: rgb(2, 22, 35, 0.71);
+    padding-top: 16px;
+    box-sizing: border-box;
+}
+.infoRight{
+    width: 500px;
+    height: 461px;
+    background-color: rgb(2, 22, 35, 0.71);
+}
+.infoMap{
+    width: 455px;
+    height: 224px;
+    margin: auto;
+    background-image: url(../img/GoogleMap.png)
+}
+.infoRight p{
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    color: #c9cdd0;
+    line-height: 21px;
+}
+.pAdress{
+    margin: 36px 0 32px 32px;
+}
+.pWeb{
+    margin: 0 0 27px 32px;
+}
+.infoLeft input{
+    display: block;
+    margin-top: 18px;
+    margin-left: 31px;
+}
+input{
+    height: 36px;
+    width: 550px;
+    background-color: rgb(2, 22, 35, 0.01);
+    color: #214744;
+    border: none;
+    border-bottom: 2px #596b75 solid;
+}
+input::placeholder{
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    color: #7a8a93;
+}
+.massege{
+    height: 118px;
+}
+input[type="submit"]{
+    margin-top: 39px;
+}
+.send{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    text-transform: uppercase;
+    width: 244px;
+    height: 53px;
+    background-color: #6eeee4;
+    border: none;
+    border-radius: 1px;
+}
+.send::placeholder{
+    color: #214744;
+}
+/* ___________________________Footer________________________________ */
+footer{
+    background-color: #262b2e;
+    text-align: center;
+    padding-top: 93px;
+    padding-bottom: 93px;
+}
+.oneF{
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: #d4d5d5;
+    margin-bottom: 19px;
+}
+.twoF{
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: #7d8082;
+}
+.flexFooter{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 205px;
+    margin-bottom: 42px;
+}
+.flexFooter div{
+    width: 46px;
+    height: 40px;
+    background-color: #424648;
+    position: relative;
+}
+.flexFooter img{
+    position: absolute;
+}
+.flexFooter div:hover{
+    background-color: #6eeee4;
+}
+
+#imP{
+    width: 23px;
+    height: 25px;
+    left: 12px;
+    top: 6px;
+}
+#imT{
+    left: 14px;
+    top: 11px;
+}
+#imF{
+    left: 16px;
+    top: 9px;
+}
+#imI{
+    left: 12px;
+    top: 9px;
+}
